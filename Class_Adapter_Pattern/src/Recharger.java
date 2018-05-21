@@ -1,5 +1,3 @@
-import com.sun.istack.internal.NotNull;
-
 public class Recharger
 {
     public static void main(String[] args)
@@ -8,8 +6,8 @@ public class Recharger
         recharge(iPhoneAdapter);
     }
 
-    private static void recharge(@NotNull AndroidRecharger device)
+    private static void recharge(AndroidRecharger recharger)
     {
-        System.out.println("Recharging using " + device.getAdapter());
+        System.out.println("Recharging using " + recharger.getAdapter());
     }
 }
